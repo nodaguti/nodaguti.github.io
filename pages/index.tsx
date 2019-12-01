@@ -75,7 +75,7 @@ const Home = () => (
         <section className="section">
           <h1 className="section__title">Profile</h1>
           <ul>
-            <li>Web Frontend Developer</li>
+            <li>Web Frontend Engineer</li>
             <li>
               Fluent in English (CEFR C1, certified by Cambridge Assessment English) and Japanese
               (native)
