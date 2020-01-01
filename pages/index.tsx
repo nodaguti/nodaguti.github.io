@@ -148,6 +148,16 @@ const Home = () => (
           <h1 className="section__title">Talks & Media Publications</h1>
           <ul>
             <li>
+              <ExternalLink href="https://www.cyberagent.co.jp/careers/special/engineer2021/web-engineer.html">
+              職種紹介 WEBフロントエンジニア | 2021年度新卒採用 エンジニアコース本選考 | 株式会社サイバーエージェント (Employee's interview on the career page of CyberAgent)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://megalodon.jp/2020-0101-2025-12/https://www.cyberagent.co.jp:443/careers/special/engineer2021/web-engineer.html">
+                Archive
+              </ExternalLink>
+              , 1 Dec 2019.
+            </li>
+            <li>
               <ExternalLink href="https://speakerdeck.com/nodaguti/my-first-year-at-abematv">
                 AbemaTV 新卒1年目エンジニア実録 (My first year at AbemaTV)
               </ExternalLink>
