@@ -152,6 +152,16 @@ const Home = (
         <Section title="Talks">
           <ul>
             <li>
+              <ExternalLink href="https://togetter.com/li/1708710">
+                Web 24 Performance Session
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://connpass.com/event/211877/">
+                Web 24
+              </ExternalLink>
+              , 7-8 May 2021.
+            </li>
+            <li>
               <ExternalLink href="https://speakerdeck.com/nodaguti/my-first-year-at-abematv">
                 AbemaTV 新卒1年目エンジニア実録 (My first year at AbemaTV)
               </ExternalLink>
