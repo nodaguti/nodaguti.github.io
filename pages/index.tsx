@@ -25,10 +25,10 @@ const Home = (
     </Head>
 
     <style jsx>{`
-      :root {
-        --font-size: 18px;
+      :global(:root) {
+        --font-size: 16px;
         --colour-background: #f8f8f8;
-        --line-height: 1.8;
+        --line-height: 1.75;
       }
 
       :global(html) {
