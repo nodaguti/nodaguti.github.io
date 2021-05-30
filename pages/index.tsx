@@ -1,11 +1,21 @@
 import React from 'react';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+import RSSParser from 'rss-parser';
 
 import { Header } from '../components/Header';
 import { Section } from '../components/Section';
 import { ExternalLink } from '../components/ExternalLink';
 
-const Home = () => (
+type Article = {
+  url: string;
+  title: string;
+  publishedAt: number | null;
+}
+
+const Home = (
+  { articles }: InferGetStaticPropsType<typeof getStaticProps>,
+) => (
   <>
     <Head>
       <title>nodaguti</title>
@@ -15,10 +25,10 @@ const Home = () => (
     </Head>
 
     <style jsx>{`
-      :root {
-        --font-size: 18px;
+      :global(:root) {
+        --font-size: 16px;
         --colour-background: #f8f8f8;
-        --line-height: 1.8;
+        --line-height: 1.75;
       }
 
       :global(html) {
@@ -124,17 +134,42 @@ const Home = () => (
             </li>
           </ul>
         </Section>
-        <Section title="Talks &amp; Media Publications">
+        <Section title="Recent Articles">
+          <ul>
+            {articles.map((article) => (
+              <li key={article.url}>
+                <ExternalLink href={article.url}>{article.title}</ExternalLink>
+                ,&nbsp;
+                {
+                  article.publishedAt ?
+                    new Date(article.publishedAt).toISOString() :
+                    '(published date unknown)'
+                }
+              </li>
+            ))}
+          </ul>
+        </Section>
+        <Section title="Talks">
           <ul>
             <li>
-              <ExternalLink href="https://www.cyberagent.co.jp/careers/special/engineer2021/web-engineer.html">
-              職種紹介 WEBフロントエンジニア | 2021年度新卒採用 エンジニアコース本選考 | 株式会社サイバーエージェント (Employee's interview on the career page of CyberAgent)
+              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/sessions/abema-web-performance-and-reliability/">
+              ABEMA Webブラウザ版をより高速で高信頼にするために (Towards more performant and reliable ABEMA)
               </ExternalLink>
               ,&nbsp;
-              <ExternalLink href="https://megalodon.jp/2020-0101-2025-12/https://www.cyberagent.co.jp:443/careers/special/engineer2021/web-engineer.html">
-                Archive
+              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/">
+                CA BASE NEXT
               </ExternalLink>
-              , 1 Dec 2019.
+              , 28 May 2021.
+            </li>
+            <li>
+              <ExternalLink href="https://togetter.com/li/1708710">
+                Web 24 Performance Session
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://connpass.com/event/211877/">
+                Web 24
+              </ExternalLink>
+              , 7-8 May 2021.
             </li>
             <li>
               <ExternalLink href="https://speakerdeck.com/nodaguti/my-first-year-at-abematv">
@@ -169,6 +204,22 @@ const Home = () => (
             </li>
           </ul>
         </Section>
+        <Section title="Interviews">
+          <ul>
+            <li>
+              <ExternalLink href="https://www.cyberagent.co.jp/way/features/list/detail/id=25585">
+                「Webフロント向け 開発型インターンシップ」で見つける成長するためのヒント | FEATUReS サイバーエージェント公式オウンドメディア
+              </ExternalLink>
+              , 22 Dec 2020.
+            </li>
+            <li>
+              <ExternalLink href="https://megalodon.jp/2020-0101-2025-12/https://www.cyberagent.co.jp:443/careers/special/engineer2021/web-engineer.html">
+                職種紹介 WEBフロントエンジニア | 2021年度新卒採用 エンジニアコース本選考 | 株式会社サイバーエージェント (Employee's interview on the career page of CyberAgent)
+              </ExternalLink>
+              , 1 Dec 2019.
+            </li>
+          </ul>
+        </Section>
         <Section title="Books">
           <ul>
             <li>
@@ -189,3 +240,34 @@ const Home = () => (
 );
 
 export default Home;
+
+export const getStaticProps: GetStaticProps<{
+  articles: Article[];
+}> = async () => {
+  const articleListList: Article[][] = await Promise.all([
+    fetchArticleList('https://nodaguti.hatenablog.com/rss'),
+    fetchArticleList('https://developers.cyberagent.co.jp/blog/archives/author/tnoguchi/feed/'),
+  ]);
+  const articleList = articleListList.flat();
+  const formattedArticlesList = articleList
+    .sort((a, b) => (b.publishedAt ?? 0) - (a.publishedAt ?? 0))
+    .slice(0, 10);
+
+  return {
+    props: {
+      articles: formattedArticlesList,
+    },
+  };
+}
+
+async function fetchArticleList(url: string): Promise<Article[]> {
+  const parser = new RSSParser();
+  const feed = await parser.parseURL(url);
+  const articles: Article[] = feed.items.map((item) => ({
+    url: item.link ?? '',
+    title: item.title ?? '',
+    publishedAt: item.isoDate ? Date.parse(item.isoDate) : null,
+  }));
+
+  return articles;
+}
