@@ -96,6 +96,7 @@ const Home = () => (
           <h1 className="section__title">Tech Interests</h1>
           <ul>
             <li>Web Performance</li>
+            <li>Client-side Site Reliability Engineering</li>
             <li>Build and Coding Infrastructure (transpiling, formatting, linting, etc.)</li>
             <li>Story-driven and Data-driven Development</li>
           </ul>
