@@ -96,6 +96,7 @@ const Home = () => (
           <h1 className="section__title">Tech Interests</h1>
           <ul>
             <li>Web Performance</li>
+            <li>Client-side Site Reliability Engineering</li>
             <li>Build and Coding Infrastructure (transpiling, formatting, linting, etc.)</li>
             <li>Story-driven and Data-driven Development</li>
           </ul>
@@ -104,9 +105,10 @@ const Home = () => (
           <h1 className="section__title">Daily Life Interests</h1>
           <ul>
             <li>Workout</li>
+            <li>Travelling</li>
             <li>Skiing</li>
             <li>Personal Asset Management</li>
-            <li>Japanese Animation (Favs: iDOLM@STER, yorimoi, Sound! Euphonium, SHIROBAKO)</li>
+            <li>Japanese Animation (Favs: iDOLM@STER, Yorimoi, Sound! Euphonium, SHIROBAKO)</li>
           </ul>
         </section>
         <section className="section">
