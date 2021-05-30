@@ -108,7 +108,7 @@ const Home = () => (
             <li>Travelling</li>
             <li>Skiing</li>
             <li>Personal Asset Management</li>
-            <li>Japanese Animation (Favs: iDOLM@STER, yorimoi, Sound! Euphonium, SHIROBAKO)</li>
+            <li>Japanese Animation (Favs: iDOLM@STER, Yorimoi, Sound! Euphonium, SHIROBAKO)</li>
           </ul>
         </section>
         <section className="section">
