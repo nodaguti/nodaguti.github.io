@@ -1,11 +1,21 @@
 import React from 'react';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+import RSSParser from 'rss-parser';
 
 import { Header } from '../components/Header';
 import { Section } from '../components/Section';
 import { ExternalLink } from '../components/ExternalLink';
 
-const Home = () => (
+type Article = {
+  url: string;
+  title: string;
+  publishedAt: number | null;
+}
+
+const Home = (
+  { articles }: InferGetStaticPropsType<typeof getStaticProps>,
+) => (
   <>
     <Head>
       <title>nodaguti</title>
@@ -124,6 +134,21 @@ const Home = () => (
             </li>
           </ul>
         </Section>
+        <Section title="Recent Articles">
+          <ul>
+            {articles.map((article) => (
+              <li key={article.url}>
+                <ExternalLink href={article.url}>{article.title}</ExternalLink>
+                ,&nbsp;
+                {
+                  article.publishedAt ?
+                    new Date(article.publishedAt).toISOString() :
+                    '(published date unknown)'
+                }
+              </li>
+            ))}
+          </ul>
+        </Section>
         <Section title="Talks &amp; Media Publications">
           <ul>
             <li>
@@ -189,3 +214,34 @@ const Home = () => (
 );
 
 export default Home;
+
+export const getStaticProps: GetStaticProps<{
+  articles: Article[];
+}> = async () => {
+  const articleListList: Article[][] = await Promise.all([
+    fetchArticleList('https://nodaguti.hatenablog.com/rss'),
+    fetchArticleList('https://developers.cyberagent.co.jp/blog/archives/author/tnoguchi/feed/'),
+  ]);
+  const articleList = articleListList.flat();
+  const formattedArticlesList = articleList
+    .sort((a, b) => (b.publishedAt ?? 0) - (a.publishedAt ?? 0))
+    .slice(0, 10);
+
+  return {
+    props: {
+      articles: formattedArticlesList,
+    },
+  };
+}
+
+async function fetchArticleList(url: string): Promise<Article[]> {
+  const parser = new RSSParser();
+  const feed = await parser.parseURL(url);
+  const articles: Article[] = feed.items.map((item) => ({
+    url: item.link ?? '',
+    title: item.title ?? '',
+    publishedAt: item.isoDate ? Date.parse(item.isoDate) : null,
+  }));
+
+  return articles;
+}
