@@ -105,6 +105,7 @@ const Home = () => (
           <h1 className="section__title">Daily Life Interests</h1>
           <ul>
             <li>Workout</li>
+            <li>Travelling</li>
             <li>Skiing</li>
             <li>Personal Asset Management</li>
             <li>Japanese Animation (Favs: iDOLM@STER, yorimoi, Sound! Euphonium, SHIROBAKO)</li>
