@@ -1,5 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+
+import { Header } from '../components/Header';
+import { Section } from '../components/Section';
 import { ExternalLink } from '../components/ExternalLink';
 
 const Home = () => (
@@ -33,16 +36,6 @@ const Home = () => (
     `}</style>
 
     <style jsx>{`
-      .header {
-        padding: 1rem 0;
-      }
-
-      .header__title {
-        font-size: 2rem;
-        font-weight: normal;
-        text-align: center;
-      }
-
       .main {
         display: grid;
         grid-template-areas: 'left-space article right-space';
@@ -57,23 +50,12 @@ const Home = () => (
       .main__article {
         grid-area: article;
       }
-
-      .section {
-        margin-bottom: 2rem;
-      }
-
-      .section__title {
-        font-size: 1.5rem;
-      }
     `}</style>
 
-    <header className="header">
-      <h1 className="header__title">nodaguti</h1>
-    </header>
+    <Header />
     <main className="main">
       <article className="main__article">
-        <section className="section">
-          <h1 className="section__title">Profile</h1>
+        <Section title="Profile">
           <ul>
             <li>Web Engineer</li>
             <li>
@@ -81,9 +63,8 @@ const Home = () => (
               (native)
             </li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Tech Skills</h1>
+        </Section>
+        <Section title="Tech Skills">
           <ul>
             <li>JavaScript (Since 2006)</li>
             <li>HTML (Since 2006)</li>
@@ -91,18 +72,16 @@ const Home = () => (
             <li>TypeScript (Since 2018)</li>
             <li>Miscellaneous: Makefile, Python, VCL (Fastly), bash, R, Java, NScripter, etc.</li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Tech Interests</h1>
+        </Section>
+        <Section title="Tech Interests">
           <ul>
             <li>Web Performance</li>
             <li>Client-side Site Reliability Engineering</li>
             <li>Build and Coding Infrastructure (transpiling, formatting, linting, etc.)</li>
             <li>Story-driven and Data-driven Development</li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Daily Life Interests</h1>
+        </Section>
+        <Section title="Daily Life Interests">
           <ul>
             <li>Workout</li>
             <li>Travelling</li>
@@ -110,9 +89,8 @@ const Home = () => (
             <li>Personal Asset Management</li>
             <li>Japanese Animation (Favs: iDOLM@STER, Yorimoi, Sound! Euphonium, SHIROBAKO)</li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Accounts</h1>
+        </Section>
+        <Section title="Accounts">
           <ul>
             <li>
               <ExternalLink href="http://nodaguti.hatenablog.com/">Blog</ExternalLink>
@@ -145,9 +123,8 @@ const Home = () => (
               <ExternalLink href="https://userstyles.org/users/7022">userstyles.org</ExternalLink>
             </li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Talks & Media Publications</h1>
+        </Section>
+        <Section title="Talks &amp; Media Publications">
           <ul>
             <li>
               <ExternalLink href="https://www.cyberagent.co.jp/careers/special/engineer2021/web-engineer.html">
@@ -191,9 +168,8 @@ const Home = () => (
               , 25 Nov 2018.
             </li>
           </ul>
-        </section>
-        <section className="section">
-          <h1 className="section__title">Books</h1>
+        </Section>
+        <Section title="Books">
           <ul>
             <li>
               <ExternalLink href="https://nodaguti.hatenablog.com/entry/2019/10/14/150602">
@@ -206,7 +182,7 @@ const Home = () => (
               , 22 Sep 2019.
             </li>
           </ul>
-        </section>
+        </Section>
       </article>
     </main>
   </>
