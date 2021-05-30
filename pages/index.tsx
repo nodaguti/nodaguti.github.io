@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+
+import { Header } from '../components/Header';
 import { Section } from '../components/Section';
 import { ExternalLink } from '../components/ExternalLink';
 
@@ -34,16 +36,6 @@ const Home = () => (
     `}</style>
 
     <style jsx>{`
-      .header {
-        padding: 1rem 0;
-      }
-
-      .header__title {
-        font-size: 2rem;
-        font-weight: normal;
-        text-align: center;
-      }
-
       .main {
         display: grid;
         grid-template-areas: 'left-space article right-space';
@@ -60,9 +52,7 @@ const Home = () => (
       }
     `}</style>
 
-    <header className="header">
-      <h1 className="header__title">nodaguti</h1>
-    </header>
+    <Header />
     <main className="main">
       <article className="main__article">
         <Section title="Profile">
