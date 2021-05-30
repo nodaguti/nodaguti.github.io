@@ -187,8 +187,14 @@ const Home = (
         <Section title="Interviews">
           <ul>
             <li>
+              <ExternalLink href="https://www.cyberagent.co.jp/way/features/list/detail/id=25585">
+                「Webフロント向け 開発型インターンシップ」で見つける成長するためのヒント | FEATUReS サイバーエージェント公式オウンドメディア
+              </ExternalLink>
+              , 22 Dec 2020.
+            </li>
+            <li>
               <ExternalLink href="https://megalodon.jp/2020-0101-2025-12/https://www.cyberagent.co.jp:443/careers/special/engineer2021/web-engineer.html">
-              職種紹介 WEBフロントエンジニア | 2021年度新卒採用 エンジニアコース本選考 | 株式会社サイバーエージェント (Employee's interview on the career page of CyberAgent)
+                職種紹介 WEBフロントエンジニア | 2021年度新卒採用 エンジニアコース本選考 | 株式会社サイバーエージェント (Employee's interview on the career page of CyberAgent)
               </ExternalLink>
               , 1 Dec 2019.
             </li>
