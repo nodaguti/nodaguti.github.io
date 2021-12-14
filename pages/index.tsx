@@ -233,6 +233,16 @@ const Home = (
         <Section title="Books">
           <ul>
             <li>
+              <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
+              フロントエンド羅針盤 ── Web体験向上へのアプローチ【第2回】データドリブンなパフォーマンス改善 一過性で終わらせない文化の作り方 (Data-driven Performance Improvement ─ A way to create culture)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
+                WEB+DB PRESS Vol.124
+              </ExternalLink>
+              , 技術評論社, 23 Aug 2021.
+            </li>
+            <li>
               <ExternalLink href="https://nodaguti.hatenablog.com/entry/2019/10/14/150602">
                 AbemaTV で学ぶ RxJS (Learning RxJS with AbemaTV)
               </ExternalLink>
