@@ -148,6 +148,11 @@ const Home = (
               </li>
             ))}
           </ul>
+          <p>
+            Read more:
+              <ExternalLink href="http://nodaguti.hatenablog.com/">徒然技術日記</ExternalLink>,
+              <ExternalLink href="https://developers.cyberagent.co.jp/blog/archives/author/tnoguchi/">CyberAgent Developers Blog</ExternalLink>
+          </p>
         </Section>
         <Section title="Talks">
           <ul>
