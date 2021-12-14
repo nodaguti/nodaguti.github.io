@@ -152,6 +152,16 @@ const Home = (
         <Section title="Talks">
           <ul>
             <li>
+              <ExternalLink href="https://developer.abema.io/2021/sessions/YbNMEfrUny/">
+              専任チームで実現する継続的なWebパフォーマンス改善 (Continuous Web performance improvement realised by dedicated team)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://developer.abema.io/2021/">
+                ABEMA Developer Conference 2021
+              </ExternalLink>
+              , 17 Dec 2021.
+            </li>
+            <li>
               <ExternalLink href="https://ca-base-next.cyberagent.co.jp/sessions/abema-web-performance-and-reliability/">
               ABEMA Webブラウザ版をより高速で高信頼にするために (Towards more performant and reliable ABEMA)
               </ExternalLink>
