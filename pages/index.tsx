@@ -249,7 +249,7 @@ const Home = (
           <ul>
             <li>
               <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
-              フロントエンド羅針盤 ── Web体験向上へのアプローチ【第2回】データドリブンなパフォーマンス改善 一過性で終わらせない文化の作り方 (Data-driven Performance Improvement ─ A way to create culture)
+              フロントエンド羅針盤 ── Web体験向上へのアプローチ【第2回】データドリブンなパフォーマンス改善 一過性で終わらせない文化の作り方 (Data-driven Performance Improvement &mdash; A way to create culture)
               </ExternalLink>
               ,&nbsp;
               <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
