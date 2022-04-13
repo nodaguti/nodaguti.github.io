@@ -149,9 +149,16 @@ const Home = (
             ))}
           </ul>
           <p>
-            Read more:
-              <ExternalLink href="http://nodaguti.hatenablog.com/">徒然技術日記</ExternalLink>,
-              <ExternalLink href="https://developers.cyberagent.co.jp/blog/archives/author/tnoguchi/">CyberAgent Developers Blog</ExternalLink>
+            Read more articles at:
+
+            <ul>
+              <li>
+                <ExternalLink href="http://nodaguti.hatenablog.com/">徒然技術日記</ExternalLink>
+              </li>
+              <li>
+                <ExternalLink href="https://developers.cyberagent.co.jp/blog/archives/author/tnoguchi/">CyberAgent Developers Blog</ExternalLink>
+              </li>
+            </ul>
           </p>
         </Section>
         <Section title="Talks">
@@ -171,8 +178,8 @@ const Home = (
               ABEMA Webブラウザ版をより高速で高信頼にするために (Towards more performant and reliable ABEMA)
               </ExternalLink>
               ,&nbsp;
-              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/">
-                CA BASE NEXT
+              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/2021">
+                CA BASE NEXT 2021
               </ExternalLink>
               , 28 May 2021.
             </li>
@@ -222,6 +229,9 @@ const Home = (
         <Section title="Interviews">
           <ul>
             <li>
+              <ExternalLink href="https://cadc.cyberagent.co.jp/2022/program/web-performance-and-security-in-2022/">2022年、知っておきたいWebのこと ~ パフォーマンス & セキュリティ ~ (Web topics you need to know in 2022 &mdash; Performance &amp; Security)</ExternalLink> (as an interviewer in QA session), <ExternalLink href="https://cadc.cyberagent.co.jp/2022/">CyberAgent Developer Conference 2022</ExternalLink>, 24 Mar, 2022.
+            </li>
+            <li>
               <ExternalLink href="https://www.cyberagent.co.jp/way/features/list/detail/id=25585">
                 「Webフロント向け 開発型インターンシップ」で見つける成長するためのヒント | FEATUReS サイバーエージェント公式オウンドメディア
               </ExternalLink>
@@ -239,7 +249,7 @@ const Home = (
           <ul>
             <li>
               <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
-              フロントエンド羅針盤 ── Web体験向上へのアプローチ【第2回】データドリブンなパフォーマンス改善 一過性で終わらせない文化の作り方 (Data-driven Performance Improvement ─ A way to create culture)
+              フロントエンド羅針盤 ── Web体験向上へのアプローチ【第2回】データドリブンなパフォーマンス改善 一過性で終わらせない文化の作り方 (Data-driven Performance Improvement &mdash; A way to create culture)
               </ExternalLink>
               ,&nbsp;
               <ExternalLink href="https://gihyo.jp/magazine/wdpress/archive/2021/vol124">
