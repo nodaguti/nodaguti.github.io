@@ -167,7 +167,7 @@ const Home = (
               , 17 Dec 2021.
             </li>
             <li>
-              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/sessions/abema-web-performance-and-reliability/">
+              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/2021/sessions/abema-web-performance-and-reliability/">
               ABEMA Webブラウザ版をより高速で高信頼にするために (Towards more performant and reliable ABEMA)
               </ExternalLink>
               ,&nbsp;
