@@ -178,8 +178,8 @@ const Home = (
               ABEMA Webブラウザ版をより高速で高信頼にするために (Towards more performant and reliable ABEMA)
               </ExternalLink>
               ,&nbsp;
-              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/">
-                CA BASE NEXT
+              <ExternalLink href="https://ca-base-next.cyberagent.co.jp/2021">
+                CA BASE NEXT 2021
               </ExternalLink>
               , 28 May 2021.
             </li>
