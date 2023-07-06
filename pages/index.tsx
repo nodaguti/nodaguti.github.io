@@ -80,24 +80,24 @@ const Home = (
             <li>HTML (Since 2006)</li>
             <li>CSS (Since 2006)</li>
             <li>TypeScript (Since 2018)</li>
-            <li>Miscellaneous: Makefile, Python, VCL (Fastly), bash, R, Java, NScripter, etc.</li>
+            <li>Miscellaneous: Makefile, Terraform, Python, VCL (Fastly), bash, Java, PHP, NScripter, etc.</li>
           </ul>
         </Section>
         <Section title="Tech Interests">
           <ul>
+            <li>Developer Productivity</li>
+            <li>Site Reliability Engineering</li>
             <li>Web Performance</li>
-            <li>Client-side Site Reliability Engineering</li>
-            <li>Build and Coding Infrastructure (transpiling, formatting, linting, etc.)</li>
             <li>Story-driven and Data-driven Development</li>
           </ul>
         </Section>
         <Section title="Daily Life Interests">
           <ul>
-            <li>Workout</li>
-            <li>Travelling</li>
-            <li>Skiing</li>
-            <li>Personal Asset Management</li>
-            <li>Japanese Animation (Favs: iDOLM@STER, Yorimoi, Sound! Euphonium, SHIROBAKO)</li>
+            <li>💪 Workout</li>
+            <li>🧳 Travelling</li>
+            <li>⛷️ Skiing</li>
+            <li>🤿 Diving</li>
+            <li>📺 Anime (Favs: iDOLM@STER, Yorimoi, Sound! Euphonium, SHIROBAKO)</li>
           </ul>
         </Section>
         <Section title="Accounts">
@@ -107,6 +107,9 @@ const Home = (
             </li>
             <li>
               <ExternalLink href="https://github.com/nodaguti">GitHub</ExternalLink>
+            </li>
+            <li>
+              <ExternalLink href="https://mstdn.jp/@nodaguti">Mastodon</ExternalLink>
             </li>
             <li>
               <ExternalLink href="https://www.twitter.com/nodaguti">Twitter</ExternalLink>
@@ -163,6 +166,36 @@ const Home = (
         </Section>
         <Section title="Talks">
           <ul>
+            <li>
+              <ExternalLink href="https://mozaic.fm/episodes/119/live-streaming.html">
+              mozaic.fm ep119 大規模ライブ配信 (Live streaming of world-wide event)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://mozaic.fm/">
+                mozaic.fm
+              </ExternalLink>
+              , 01 May 2023.
+            </li>
+            <li>
+              <ExternalLink href="https://podcasters.spotify.com/pod/show/muddy-web/episodes/2-Web-Speed-Hackathon-e1t9qkt">
+              Muddy Web Podcast #2 これまでの作問者たちが語る！Web Speed Hackathonの舞台裏
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://podcasters.spotify.com/pod/show/muddy-web">
+                Muddy Web Podcast
+              </ExternalLink>
+              , 18 Jan 2023.
+            </li>
+            <li>
+              <ExternalLink href="https://podcasters.spotify.com/pod/show/muddy-web/episodes/1-e1qhfa7">
+              Muddy Web Podcast #1 サービス開始から数年経ったプロダクトのリリースフローとは？
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://podcasters.spotify.com/pod/show/muddy-web">
+                Muddy Web Podcast
+              </ExternalLink>
+              , 16 Nov 2022.
+            </li>
             <li>
               <ExternalLink href="https://developer.abema.io/2021/sessions/YbNMEfrUny/">
               専任チームで実現する継続的なWebパフォーマンス改善 (Continuous Web performance improvement realised by dedicated team)
@@ -228,11 +261,20 @@ const Home = (
         </Section>
         <Section title="Interviews">
           <ul>
+          <li>
+              <ExternalLink href="https://cadc.cyberagent.co.jp/2023/sessions/web-2023/">2023年、知っておきたいWebのこと ~フレームワーク・Web UI~ (Web topics you need to know in 2023 &mdash; Framework &amp; Web UI)</ExternalLink> (as an interviewer in QA session), <ExternalLink href="https://cadc.cyberagent.co.jp/2022/">CyberAgent Developer Conference 2023</ExternalLink>, 29 Jun, 2023.
+            </li>
+            <li>
+              <ExternalLink href="https://www.cyberagent.co.jp/way/list/detail/id=28537">
+                Webが日常に溶け込んだ新時代で、Webフロントエンドのキャリアの未来を考えてみる | FEATUReS サイバーエージェント公式オウンドメディア
+              </ExternalLink>
+              , 22 Feb 2023.
+            </li>
             <li>
               <ExternalLink href="https://cadc.cyberagent.co.jp/2022/program/web-performance-and-security-in-2022/">2022年、知っておきたいWebのこと ~ パフォーマンス & セキュリティ ~ (Web topics you need to know in 2022 &mdash; Performance &amp; Security)</ExternalLink> (as an interviewer in QA session), <ExternalLink href="https://cadc.cyberagent.co.jp/2022/">CyberAgent Developer Conference 2022</ExternalLink>, 24 Mar, 2022.
             </li>
             <li>
-              <ExternalLink href="https://www.cyberagent.co.jp/way/features/list/detail/id=25585">
+              <ExternalLink href="https://www.cyberagent.co.jp/way/list/detail/id=25585">
                 「Webフロント向け 開発型インターンシップ」で見つける成長するためのヒント | FEATUReS サイバーエージェント公式オウンドメディア
               </ExternalLink>
               , 22 Dec 2020.
