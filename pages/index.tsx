@@ -167,7 +167,7 @@ const Home = (
         <Section title="Talks">
           <ul>
             <li>
-              <ExternalLink href="https://mozaic.fm/episodes/119/live-streaming.html">
+              <ExternalLink href="https://speakerdeck.com/cyberagentdevelopers/wei-lai-noterebiwoxing-dukuru-abemanogurosuzhan-lue-yuzati-yan-topin-zhi-xiang-shang-noapuroti">
               未来のテレビを形づくる ABEMAのグロース戦略：ユーザー体験と品質向上のアプローチ (ABEMA's growth strategy: Approach to user experience and quality improvement)
               </ExternalLink>
               ,&nbsp;
