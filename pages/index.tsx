@@ -168,6 +168,26 @@ const Home = (
           <ul>
             <li>
               <ExternalLink href="https://mozaic.fm/episodes/119/live-streaming.html">
+              未来のテレビを形づくる ABEMAのグロース戦略：ユーザー体験と品質向上のアプローチ (ABEMA's growth strategy: Approach to user experience and quality improvement)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://www.inter-bee.com/ja/forvisitors/conference/session/?conference_id=2733">
+                INTER BEE 2024
+              </ExternalLink>
+              , 15 Nov 2024.
+            </li>
+            <li>
+              <ExternalLink href="https://speakerdeck.com/nodaguti/building-web-server-using-fastly-and-falco-without-node-dot-js-for-iptv-abema-app">
+              FastlyとfalcoでNode.jsレスな Webサーバー構築 : IPTV版 ABEMAアプリインフラ刷新 (Building web server using Fastly and falco without Node.js for IPTV ABEMA app)
+              </ExternalLink>
+              ,&nbsp;
+              <ExternalLink href="https://cyberagent.connpass.com/event/325969/">
+                Muddy Web #9
+              </ExternalLink>
+              , 27 August 2024.
+            </li>
+            <li>
+              <ExternalLink href="https://mozaic.fm/episodes/119/live-streaming.html">
               mozaic.fm ep119 大規模ライブ配信 (Live streaming of world-wide event)
               </ExternalLink>
               ,&nbsp;
